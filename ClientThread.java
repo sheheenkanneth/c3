@@ -1,4 +1,4 @@
-mport java.io.*;
+import java.io.*;
 import java.net.*;
 public class ClientThread implements Runnable
 {
@@ -23,7 +23,7 @@ writeToServer.println(message);
 writeToServer.flush();
 if(message.equalsIgnoreCase("exit"))
 {
-System.exit(O);
+System.exit(0);
 }
 }
 }
@@ -39,7 +39,7 @@ if(!msg.equalsIgnoreCase("exit"))
 {
 System.out.println(msg);
 }
-else { System.exit(O);}
+else { System.exit(0);}
 }
 }
 catch(Exception exp)

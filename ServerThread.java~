@@ -10,7 +10,7 @@ String message = null;
 public ServerThread()
 {
 try {
-serverSocket = new ServerSocket(4456); System.out.println("Waiting for connection...");
+serverSocket = new ServerSocket(4445); System.out.println("Waiting for connection...");
 socket = serverSocket.accept(); System.out.println("Connection accepted...");
 readFromClient = new BufferedReader(new InputStreamReader( socket.getInputStream()));
 writeToClient = new PrintWriter( socket.getOutputStream(), true);
